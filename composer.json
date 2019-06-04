@@ -11,6 +11,10 @@
     {
       "type": "vcs",
       "url": "https://github.com/pantheon-systems/wordpress-composer"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/kadamwhite/cartocacoethes"
     }
   ],
   "require": {
