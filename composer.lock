@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "00462c0286658912f55aa89a44353ff6",
+    "content-hash": "337927f7a182891172e085fa5041c1f5",
     "packages": [
         {
             "name": "composer/installers",
@@ -127,6 +127,31 @@
             "time": "2018-08-27T06:10:37+00:00"
         },
         {
+            "name": "humanmade/asset-loader",
+            "version": "v0.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/humanmade/asset-loader.git",
+                "reference": "be7ea64da77cba2af67e5d72a4d07efaea413dc8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/humanmade/asset-loader/zipball/be7ea64da77cba2af67e5d72a4d07efaea413dc8",
+                "reference": "be7ea64da77cba2af67e5d72a4d07efaea413dc8",
+                "shasum": ""
+            },
+            "require-dev": {
+                "humanmade/coding-standards": "^0.6.0"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Utilities to seamlessly consume Webpack-bundled assets in WordPress themes & plugins.",
+            "time": "2019-05-02T15:05:13+00:00"
+        },
+        {
             "name": "johnpbloch/wordpress-core-installer",
             "version": "0.2.1",
             "source": {
@@ -175,6 +200,34 @@
             "time": "2015-06-11T15:15:30+00:00"
         },
         {
+            "name": "kadamwhite/artgallery",
+            "version": "v0.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kadamwhite/artgallery.git",
+                "reference": "f892c306328ec9929853eb2d4adba59a58ebda8c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kadamwhite/artgallery/zipball/f892c306328ec9929853eb2d4adba59a58ebda8c",
+                "reference": "f892c306328ec9929853eb2d4adba59a58ebda8c",
+                "shasum": ""
+            },
+            "require-dev": {
+                "humanmade/coding-standards": "dev-master"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "(Artistic-2.0 OR GPL-2.0-or-later)"
+            ],
+            "description": "A WordPress plugin providing useful data structures & blocks for displaying artwork online",
+            "support": {
+                "source": "https://github.com/kadamwhite/artgallery/tree/v0.3.3",
+                "issues": "https://github.com/kadamwhite/artgallery/issues"
+            },
+            "time": "2019-06-05T03:47:49+00:00"
+        },
+        {
             "name": "kadamwhite/cartocacoethes",
             "version": "v0.6.5",
             "source": {
@@ -198,6 +251,34 @@
                 "issues": "https://github.com/kadamwhite/cartocacoethes/issues"
             },
             "time": "2019-06-01T19:13:21+00:00"
+        },
+        {
+            "name": "kadamwhite/featured-item-blocks",
+            "version": "v0.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kadamwhite/featured-item-blocks.git",
+                "reference": "c5e1dacefcd0d3c9e9b52d923837d4383e5b8812"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kadamwhite/featured-item-blocks/zipball/c5e1dacefcd0d3c9e9b52d923837d4383e5b8812",
+                "reference": "c5e1dacefcd0d3c9e9b52d923837d4383e5b8812",
+                "shasum": ""
+            },
+            "require-dev": {
+                "humanmade/coding-standards": "dev-master"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "A WordPress editor plugin and blocks to select & display featured items",
+            "support": {
+                "source": "https://github.com/kadamwhite/featured-item-blocks/tree/v0.6.1",
+                "issues": "https://github.com/kadamwhite/featured-item-blocks/issues"
+            },
+            "time": "2019-06-05T03:44:57+00:00"
         },
         {
             "name": "pantheon-systems/quicksilver-pushback",
