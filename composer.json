@@ -11,6 +11,18 @@
     {
       "type": "vcs",
       "url": "https://github.com/pantheon-systems/wordpress-composer"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/kadamwhite/cartocacoethes"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/kadamwhite/featured-item-blocks"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/kadamwhite/artgallery"
     }
   ],
   "require": {
@@ -21,10 +33,21 @@
     "roots/wp-password-bcrypt": "^1.0.0",
     "rvtraveller/qs-composer-installer": "^1.1",
     "vlucas/phpdotenv": "^3.1.0",
+    "wpackagist-plugin/akismet": "4.1.2",
+    "wpackagist-plugin/category-posts": "4.9.2",
+    "wpackagist-plugin/google-analytics-for-wordpress": "7.6.0",
+    "wpackagist-plugin/jetpack": "7.4",
     "wpackagist-plugin/lh-hsts": "^1.24",
     "wpackagist-plugin/pantheon-advanced-page-cache": "^0.3.0",
-    "wpackagist-plugin/wp-native-php-sessions": "^0.6.9",
-    "wpackagist-theme/twentynineteen": "^1.2"
+    "wpackagist-plugin/public-post-preview": "2.8.0",
+    "wpackagist-plugin/pwa": "0.2.0",
+    "wpackagist-plugin/safe-redirect-manager": "1.9.2",
+    "wpackagist-plugin/smarter-navigation": "1.4",
+    "wpackagist-plugin/wp-native-php-sessions": "0.7.0",
+    "humanmade/asset-loader": "^0.3.1",
+    "kadamwhite/cartocacoethes": "^0.6.5",
+    "kadamwhite/featured-item-blocks": "^0.6.1",
+    "kadamwhite/artgallery": "^0.3.3"
   },
   "require-dev": {
     "behat/mink-goutte-driver": "^1.2.1",
@@ -55,6 +78,11 @@
       ]
     },
     "installer-paths": {
+      "web/wp-content/mu-plugins/{$name}/": [
+        "humanmade/asset-loader",
+        "kadamwhite/artgallery",
+        "kadamwhite/featured-item-blocks"
+      ],
       "web/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
       "web/wp-content/themes/{$name}/": ["type:wordpress-theme"],
       "web/private/scripts/quicksilver/{$name}/": ["type:quicksilver-script"]
