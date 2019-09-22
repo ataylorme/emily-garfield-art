@@ -48,6 +48,7 @@
     "wpackagist-plugin/safe-redirect-manager": "1.9.2",
     "wpackagist-plugin/smarter-navigation": "1.4",
     "wpackagist-plugin/wp-native-php-sessions": "0.7.0",
+    "wpackagist-plugin/wp-redis":"0.7.1",
     "humanmade/asset-loader": "^0.3.1",
     "kadamwhite/cartocacoethes": "^0.6.5",
     "kadamwhite/civil-footnotes": "dev-master",
