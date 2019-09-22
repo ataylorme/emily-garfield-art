@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "886c0e89e1593178a206007bec9bc7b3",
+    "content-hash": "e5d6989a23ec8b122a96ca3ccc09d2ad",
     "packages": [
         {
             "name": "composer/installers",
@@ -203,16 +203,16 @@
         },
         {
             "name": "kadamwhite/artgallery",
-            "version": "v0.3.3",
+            "version": "v0.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kadamwhite/artgallery.git",
-                "reference": "f892c306328ec9929853eb2d4adba59a58ebda8c"
+                "reference": "bc4b9d10de7bfd74b8fe19225f5a7a850d37d372"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kadamwhite/artgallery/zipball/f892c306328ec9929853eb2d4adba59a58ebda8c",
-                "reference": "f892c306328ec9929853eb2d4adba59a58ebda8c",
+                "url": "https://api.github.com/repos/kadamwhite/artgallery/zipball/bc4b9d10de7bfd74b8fe19225f5a7a850d37d372",
+                "reference": "bc4b9d10de7bfd74b8fe19225f5a7a850d37d372",
                 "shasum": ""
             },
             "require-dev": {
@@ -224,23 +224,23 @@
             ],
             "description": "A WordPress plugin providing useful data structures & blocks for displaying artwork online",
             "support": {
-                "source": "https://github.com/kadamwhite/artgallery/tree/v0.3.3",
+                "source": "https://github.com/kadamwhite/artgallery/tree/v0.3.4",
                 "issues": "https://github.com/kadamwhite/artgallery/issues"
             },
-            "time": "2019-06-05T03:47:49+00:00"
+            "time": "2019-09-22T18:45:09+00:00"
         },
         {
             "name": "kadamwhite/cartocacoethes",
-            "version": "v0.6.5",
+            "version": "v0.6.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kadamwhite/cartocacoethes.git",
-                "reference": "98edeb48856a08d4b2b80c83736da925577086f2"
+                "reference": "cea1ed6fb92ed9902181d6d0661abc6ddf8ae730"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kadamwhite/cartocacoethes/zipball/98edeb48856a08d4b2b80c83736da925577086f2",
-                "reference": "98edeb48856a08d4b2b80c83736da925577086f2",
+                "url": "https://api.github.com/repos/kadamwhite/cartocacoethes/zipball/cea1ed6fb92ed9902181d6d0661abc6ddf8ae730",
+                "reference": "cea1ed6fb92ed9902181d6d0661abc6ddf8ae730",
                 "shasum": ""
             },
             "require-dev": {
@@ -249,10 +249,10 @@
             "type": "wordpress-theme",
             "description": "A responsive, block editor-ready WordPress theme for map lovers",
             "support": {
-                "source": "https://github.com/kadamwhite/cartocacoethes/tree/v0.6.5",
+                "source": "https://github.com/kadamwhite/cartocacoethes/tree/v0.6.6",
                 "issues": "https://github.com/kadamwhite/cartocacoethes/issues"
             },
-            "time": "2019-06-01T19:13:21+00:00"
+            "time": "2019-09-22T18:49:20+00:00"
         },
         {
             "name": "kadamwhite/civil-footnotes",
