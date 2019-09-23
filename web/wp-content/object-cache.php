@@ -1,7 +1,5 @@
 <?php
-/**
- * Object Caching drop-in (see https://pantheon.io/docs/redis).
- */
-
-// This is a Windows-friendly symlink
+// phpcs:ignoreFile
+// Object Caching drop-in serving as a Windows-friendly symlink.
+// See https://pantheon.io/docs/redis for more information.
 require_once WP_CONTENT_DIR . '/plugins/wp-redis/object-cache.php';
