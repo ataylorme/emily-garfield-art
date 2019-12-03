@@ -1,12 +1,7 @@
 <?php
 /**
- * Plugin Name: HM MU Plugin Loader
- * Description: Loads the MU plugins required to run the site
- * Author: Human Made Limited
- * Author URI: http://hmn.md/
- * Version: 1.0
- *
- * @package Finder
+ * Plugin Name: MU Plugin Loader
+ * Description: Loads the MU plugins required to run the site (asset-loader, artgallery, featured-item-blocks)
  */
 
 if ( defined( 'WP_INSTALLING' ) && WP_INSTALLING ) {
