@@ -2,6 +2,8 @@
 /**
  * Plugin Name: MU Plugin Loader
  * Description: Loads the MU plugins required to run the site (asset-loader, artgallery, featured-item-blocks)
+ *
+ * @package emily-garfield-art
  */
 
 if ( defined( 'WP_INSTALLING' ) && WP_INSTALLING ) {
