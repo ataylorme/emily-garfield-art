@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2e8f9843df4f7e7b3d41e9918536c9d5",
+    "content-hash": "9abc87b7ed5896d96147e998fc1fc215",
     "packages": [
         {
             "name": "composer/installers",
@@ -290,69 +290,6 @@
                 "issues": "https://github.com/kadamwhite/cartocacoethes/issues"
             },
             "time": "2019-09-22T18:49:20+00:00"
-        },
-        {
-            "name": "kadamwhite/civil-footnotes",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/kadamwhite/civil-footnotes.git",
-                "reference": "b1a4d11c7d11622467a73835bba33f6a6a1bbfad"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/kadamwhite/civil-footnotes/zipball/b1a4d11c7d11622467a73835bba33f6a6a1bbfad",
-                "reference": "b1a4d11c7d11622467a73835bba33f6a6a1bbfad",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": "~1.0",
-                "php": "^7.0"
-            },
-            "require-dev": {
-                "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
-                "phpcompatibility/phpcompatibility-wp": "^2.0",
-                "phpunit/phpunit": "^8",
-                "squizlabs/php_codesniffer": "^3.3.1",
-                "wp-coding-standards/wpcs": "^2.1.1"
-            },
-            "type": "wordpress-plugin",
-            "scripts": {
-                "test": [
-                    "vendor/bin/phpunit tests/*"
-                ],
-                "lint": [
-                    "vendor/bin/phpcs"
-                ],
-                "lint:fix": [
-                    "vendor/bin/phpcbf"
-                ],
-                "post-install-cmd": [
-                    "\"vendor/bin/phpcs\" --config-set installed_paths vendor/wp-coding-standards/wpcs"
-                ],
-                "post-update-cmd": [
-                    "\"vendor/bin/phpcs\" --config-set installed_paths vendor/wp-coding-standards/wpcs"
-                ]
-            },
-            "license": [
-                "GPL2+"
-            ],
-            "authors": [
-                {
-                    "name": "Austin Sweeney",
-                    "homepage": "https://defomicron.net"
-                },
-                {
-                    "name": "K Adam White",
-                    "homepage": "https://kadamwhite.com"
-                }
-            ],
-            "description": "Create footnotes using a simple, easy-to-read syntax.",
-            "support": {
-                "source": "https://github.com/kadamwhite/civil-footnotes/tree/v2.0",
-                "issues": "https://github.com/kadamwhite/civil-footnotes/issues"
-            },
-            "time": "2019-10-01T23:44:30+00:00"
         },
         {
             "name": "kadamwhite/featured-item-blocks",
@@ -741,6 +678,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/category-posts/"
+        },
+        {
+            "name": "wpackagist-plugin/civil-footnotes",
+            "version": "2.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/civil-footnotes/",
+                "reference": "tags/2.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/civil-footnotes.2.0.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/civil-footnotes/"
         },
         {
             "name": "wpackagist-plugin/google-analytics-for-wordpress",
@@ -5250,13 +5205,13 @@
                 "events",
                 "zf2"
             ],
+            "abandoned": "laminas/laminas-eventmanager",
             "time": "2018-04-25T15:33:34+00:00"
         }
     ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "kadamwhite/civil-footnotes": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": false,
