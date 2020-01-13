@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9abc87b7ed5896d96147e998fc1fc215",
+    "content-hash": "2a9973ed21bbcdf0f41b908d1e53844d",
     "packages": [
         {
             "name": "composer/installers",
@@ -268,16 +268,16 @@
         },
         {
             "name": "kadamwhite/cartocacoethes",
-            "version": "v0.6.6",
+            "version": "v0.6.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kadamwhite/cartocacoethes.git",
-                "reference": "cea1ed6fb92ed9902181d6d0661abc6ddf8ae730"
+                "reference": "05780b070e997998cc7c60571df9f444c0e528fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kadamwhite/cartocacoethes/zipball/cea1ed6fb92ed9902181d6d0661abc6ddf8ae730",
-                "reference": "cea1ed6fb92ed9902181d6d0661abc6ddf8ae730",
+                "url": "https://api.github.com/repos/kadamwhite/cartocacoethes/zipball/05780b070e997998cc7c60571df9f444c0e528fb",
+                "reference": "05780b070e997998cc7c60571df9f444c0e528fb",
                 "shasum": ""
             },
             "require-dev": {
@@ -286,10 +286,10 @@
             "type": "wordpress-theme",
             "description": "A responsive, block editor-ready WordPress theme for map lovers",
             "support": {
-                "source": "https://github.com/kadamwhite/cartocacoethes/tree/v0.6.6",
+                "source": "https://github.com/kadamwhite/cartocacoethes/tree/v0.6.7",
                 "issues": "https://github.com/kadamwhite/cartocacoethes/issues"
             },
-            "time": "2019-09-22T18:49:20+00:00"
+            "time": "2020-01-13T17:22:12+00:00"
         },
         {
             "name": "kadamwhite/featured-item-blocks",
@@ -2238,6 +2238,7 @@
                 "extension",
                 "wordpress"
             ],
+            "abandoned": true,
             "time": "2019-06-24T19:27:08+00:00"
         },
         {

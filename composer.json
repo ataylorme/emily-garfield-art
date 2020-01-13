@@ -31,7 +31,7 @@
     "humanmade/asset-loader": "^0.3.1",
     "humanmade/hm-redirects": "^0.5.1",
     "kadamwhite/artgallery": "^0.4.0",
-    "kadamwhite/cartocacoethes": "^0.6.6",
+    "kadamwhite/cartocacoethes": "^0.6.7",
     "kadamwhite/featured-item-blocks": "^0.6.1",
     "pantheon-systems/quicksilver-pushback": "^1.0.1",
     "pantheon-systems/wordpress-composer": "*",
