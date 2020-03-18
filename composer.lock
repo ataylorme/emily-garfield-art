@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bc6c65f652349f864b34b809082ab9f4",
+    "content-hash": "bb476f4840c61e7022ddba204f3ab43a",
     "packages": [
         {
             "name": "composer/installers",
@@ -270,16 +270,16 @@
         },
         {
             "name": "kadamwhite/cartocacoethes",
-            "version": "v0.6.9",
+            "version": "v0.6.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kadamwhite/cartocacoethes.git",
-                "reference": "6efc51809ec85f87d9a8bddbc2ff46e28a7511fd"
+                "reference": "37d245eadd93e2e0ff0a40d774f006785e490dfe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kadamwhite/cartocacoethes/zipball/6efc51809ec85f87d9a8bddbc2ff46e28a7511fd",
-                "reference": "6efc51809ec85f87d9a8bddbc2ff46e28a7511fd",
+                "url": "https://api.github.com/repos/kadamwhite/cartocacoethes/zipball/37d245eadd93e2e0ff0a40d774f006785e490dfe",
+                "reference": "37d245eadd93e2e0ff0a40d774f006785e490dfe",
                 "shasum": ""
             },
             "require-dev": {
@@ -288,10 +288,10 @@
             "type": "wordpress-theme",
             "description": "A responsive, block editor-ready WordPress theme for map lovers",
             "support": {
-                "source": "https://github.com/kadamwhite/cartocacoethes/tree/v0.6.9",
+                "source": "https://github.com/kadamwhite/cartocacoethes/tree/v0.6.10",
                 "issues": "https://github.com/kadamwhite/cartocacoethes/issues"
             },
-            "time": "2020-03-18T17:11:42+00:00"
+            "time": "2020-03-18T17:32:42+00:00"
         },
         {
             "name": "kadamwhite/featured-item-blocks",
