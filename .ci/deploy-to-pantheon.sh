@@ -1,37 +1,46 @@
 #!/bin/bash
 
-set -eo pipefail
-
-#
-# This script deploys the build artifact to Pantheon.
-# On the master branch the dev environment is used.
-# Otherwise a multidev environment is used.
-#
-
-# Authenticate with Terminus
-terminus -n auth:login --machine-token="$TERMINUS_TOKEN"
-
-# Prepare for Pantheon
-composer run prepare-for-pantheon
-
-if [[ $CI_BRANCH != $DEFAULT_BRANCH ]]
+if [[ ${CURRENT_BRANCH} != "master" && -z ${CI_PR_URL} ]];
 then
-    # Create a new multidev environment (or push to an existing one)
-    terminus -n build:env:create "$TERMINUS_SITE.dev" "$TERMINUS_ENV" --yes
-else
-    # Push to the dev environment
-    terminus -n build:env:push "$TERMINUS_SITE.dev" --yes
+  echo -e "CI will only deploy to Pantheon if on the master branch or creating a pull requests.\n"
+  exit 0;
 fi
 
-# Run update-db to ensure that the cloned database is updated for the new code.
-terminus -n wp $TERMINUS_SITE.$TERMINUS_ENV -- core update-db
+set -ex
 
-# Clear the site environment's cache
-terminus -n env:clear-cache "$TERMINUS_SITE.$TERMINUS_ENV"
+TERMINUS_DOES_MULTIDEV_EXIST()
+{
+    # Return 1 if on master since dev always exists
+    if [[ ${CURRENT_BRANCH} == "master" ]]
+    then
+        return 1;
+    fi
 
-# Ensure secrets are set
-terminus -n secrets:set "$TERMINUS_SITE.$TERMINUS_ENV" token "$GITHUB_TOKEN" --file='github-secrets.json' --clear --skip-if-empty
+    # Stash list of Pantheon multidev environments
+    PANTHEON_MULTIDEV_LIST="$(terminus multidev:list -n ${TERMINUS_SITE} --format=list --field=Name)"
 
-# Delete old multidev environments associated
-# with a PR that has been merged or closed.
-terminus -n build:env:delete:pr $TERMINUS_SITE --yes
+    while read -r multiDev; do
+        if [[ "${multiDev}" == "$1" ]]
+        then
+            return 0;
+        fi
+    done <<< "$PANTHEON_MULTIDEV_LIST"
+
+    return 1;
+}
+
+if ! TERMINUS_DOES_MULTIDEV_EXIST ${TERMINUS_ENV}
+then
+    terminus env:wake -n "$TERMINUS_SITE.dev"
+    terminus build:env:create -n "$TERMINUS_SITE.dev" "$TERMINUS_ENV" --clone-content --yes --notify="$NOTIFY"
+else
+    terminus build:env:push -n "$TERMINUS_SITE.$TERMINUS_ENV" --yes
+fi
+
+set +ex
+echo 'terminus secrets:set'
+terminus secrets:set -n "$TERMINUS_SITE.$TERMINUS_ENV" token "$GITHUB_TOKEN" --file='github-secrets.json' --clear --skip-if-empty
+set -ex
+
+# Cleanup old multidevs
+terminus build:env:delete:pr -n "$TERMINUS_SITE" --yes
