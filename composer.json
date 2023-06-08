@@ -58,8 +58,8 @@
     "brain/monkey": "^2.2.0",
     "dealerdirect/phpcodesniffer-composer-installer": "*",
     "dmore/behat-chrome-extension": "^1.2",
-    "paulgibbs/behat-wordpress-extension": "^3.1.1",
-    "phpunit/phpunit": "^7.5.1",
+    "paulgibbs/behat-wordpress-extension": "*",
+    "phpunit/phpunit": "^9.5.0",
     "roave/security-advisories": "dev-master",
     "squizlabs/php_codesniffer": "^3.4.0",
     "wp-coding-standards/wpcs": "^1.2.1"
@@ -70,7 +70,7 @@
     "optimize-autoloader": true,
     "sort-packages": true,
     "platform": {
-      "php": "7.2"
+      "php": "8.1"
     },
     "allow-plugins": {
       "composer/installers": true,
